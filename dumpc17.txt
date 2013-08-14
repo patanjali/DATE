@@ -1,0 +1,122 @@
+13
+num1 is 14
+created graph
+7
+9
+7 8
+8
+10
+
+
+11
+9 10
+11 12
+12
+5
+6
+
+reading types
+0 PI
+1 PI
+2 PI
+3 PI
+4 PI
+5 PO
+6 PO
+7 na02m80
+8 na02m80
+9 na02m80
+10 na02m80
+11 na02m80
+12 na02m80
+13 
+doing fanins or fanouts
+done with leakage
+displaying values
+0	0	0
+1	0	0
+2	0	0
+3	0	0
+4	0	0
+5	0	0
+6	0	0
+7	768	2
+8	768	2
+9	768	2
+10	768	2
+11	768	2
+12	768	2
+
+num :13
+print rogue cells
+13 
+
+num :13
+done with timing
+14
+FOR PO 5 :fanins are	11	fanout size 0
+FOR PO 6 :fanins are	12	fanout size 0
+
+did bfs
+max level is40 0
+1 0
+2 0
+3 0
+4 0
+5 4
+6 4
+7 1
+8 1
+9 2
+10 2
+11 3
+12 3
+13 -1
+verifying
+0	PI	0
+1	PI	0
+2	PI	0
+3	PI	0
+4	PI	0
+5	PO	6
+6	PO	6
+7	na02m80	0
+8	na02m80	0
+9	na02m80	2
+10	na02m80	2
+11	na02m80	4
+12	na02m80	4
+13		0
+delay6
+required time analysis
+0	PI	0  0
+1	PI	0  0
+2	PI	0  0
+3	PI	0  0
+4	PI	0  0
+5	PO	0  0
+6	PO	0  0
+7	na02m80	4  2
+8	na02m80	2  4
+9	na02m80	2  4
+10	na02m80	2  2
+11	na02m80	2  0
+12	na02m80	2  0
+13		0  0
+delay is6
+verifying
+0	PI	0
+1	PI	0
+2	PI	0
+3	PI	0
+4	PI	0
+5	PO	6
+6	PO	6
+7	na02m80	0
+8	na02m80	0
+9	na02m80	2
+10	na02m80	2
+11	na02m80	4
+12	na02m80	4
+13		0
+delay6

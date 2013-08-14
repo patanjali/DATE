@@ -1,0 +1,65 @@
+rm: cannot remove `slackfile.txt': No such file or directory
+c17
+time ./slack.out c17.hgr c17.type contest.timing contest.leakage >& c17.dump
+./runall.sh: line 2:  8802 Segmentation fault      (core dumped) ./slack.out $file.hgr $file.type contest.timing contest.leakage &>$file.dump
+
+real	0m0.098s
+user	0m0.004s
+sys	0m0.000s
+mv: cannot stat `slackfile.txt': No such file or directory
+c1908
+time ./slack.out c1908.hgr c1908.type contest.timing contest.leakage >& c1908.dump
+
+real	0m0.590s
+user	0m0.576s
+sys	0m0.008s
+c2670
+time ./slack.out c2670.hgr c2670.type contest.timing contest.leakage >& c2670.dump
+
+real	0m1.726s
+user	0m1.708s
+sys	0m0.008s
+c3540
+time ./slack.out c3540.hgr c3540.type contest.timing contest.leakage >& c3540.dump
+./runall.sh: line 2:  8809 Segmentation fault      (core dumped) ./slack.out $file.hgr $file.type contest.timing contest.leakage &>$file.dump
+
+real	0m1.951s
+user	0m1.840s
+sys	0m0.012s
+mv: cannot stat `slackfile.txt': No such file or directory
+c432
+time ./slack.out c432.hgr c432.type contest.timing contest.leakage >& c432.dump
+
+real	0m0.041s
+user	0m0.040s
+sys	0m0.004s
+c499
+time ./slack.out c499.hgr c499.type contest.timing contest.leakage >& c499.dump
+
+real	0m0.064s
+user	0m0.056s
+sys	0m0.004s
+c5315
+time ./slack.out c5315.hgr c5315.type contest.timing contest.leakage >& c5315.dump
+
+real	0m4.292s
+user	0m4.248s
+sys	0m0.028s
+c6288
+time ./slack.out c6288.hgr c6288.type contest.timing contest.leakage >& c6288.dump
+
+real	0m4.106s
+user	0m4.072s
+sys	0m0.020s
+c7552
+time ./slack.out c7552.hgr c7552.type contest.timing contest.leakage >& c7552.dump
+
+real	0m9.062s
+user	0m8.997s
+sys	0m0.036s
+c880
+time ./slack.out c880.hgr c880.type contest.timing contest.leakage >& c880.dump
+
+real	0m0.166s
+user	0m0.156s
+sys	0m0.008s

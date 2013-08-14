@@ -1,0 +1,1281 @@
+Parsing verilog...
+Module usb_phy
+
+Primary input: DataOut_i_0_
+Primary input: DataOut_i_1_
+Primary input: DataOut_i_2_
+Primary input: DataOut_i_3_
+Primary input: DataOut_i_4_
+Primary input: DataOut_i_5_
+Primary input: DataOut_i_6_
+Primary input: DataOut_i_7_
+Primary input: TxValid_i
+Primary input: ispd_clk
+Primary input: phy_tx_mode
+Primary input: rst
+Primary input: rxd
+Primary input: rxdn
+Primary input: rxdp
+
+Primary output: DataIn_o_0_
+Primary output: DataIn_o_1_
+Primary output: DataIn_o_2_
+Primary output: DataIn_o_3_
+Primary output: DataIn_o_4_
+Primary output: DataIn_o_5_
+Primary output: DataIn_o_6_
+Primary output: DataIn_o_7_
+Primary output: LineState_o_0_
+Primary output: LineState_o_1_
+Primary output: RxActive_o
+Primary output: RxError_o
+Primary output: RxValid_o
+Primary output: TxReady_o
+Primary output: g1897_u0_o
+Primary output: txdn
+Primary output: txdp
+Primary output: txoe
+Primary output: usb_rst
+
+Net: DataIn_o_0_
+Net: DataIn_o_1_
+Net: DataIn_o_2_
+Net: DataIn_o_3_
+Net: DataIn_o_4_
+Net: DataIn_o_5_
+Net: DataIn_o_6_
+Net: DataIn_o_7_
+Net: DataOut_i_0_
+Net: DataOut_i_1_
+Net: DataOut_i_2_
+Net: DataOut_i_3_
+Net: DataOut_i_4_
+Net: DataOut_i_5_
+Net: DataOut_i_6_
+Net: DataOut_i_7_
+Net: FE_RN_0_0
+Net: FE_RN_1_0
+Net: FE_RN_2_0
+Net: LineState_o_0_
+Net: LineState_o_1_
+Net: RxActive_o
+Net: RxError_o
+Net: RxValid_o
+Net: TxReady_o
+Net: TxValid_i
+Net: g11_p
+Net: g15_p
+Net: g1737_p
+Net: g1738_p
+Net: g1739_p
+Net: g1740_p
+Net: g1741_p
+Net: g1742_p
+Net: g1743_p
+Net: g1757_p
+Net: g1776_da
+Net: g1776_db
+Net: g1776_sb
+Net: g1777_da
+Net: g1777_db
+Net: g1777_sb
+Net: g1778_da
+Net: g1778_db
+Net: g1778_sb
+Net: g1779_da
+Net: g1779_db
+Net: g1779_sb
+Net: g1780_da
+Net: g1780_db
+Net: g1780_sb
+Net: g1781_da
+Net: g1781_db
+Net: g1781_sb
+Net: g1782_da
+Net: g1782_db
+Net: g1782_sb
+Net: g1855_da
+Net: g1855_db
+Net: g1855_sb
+Net: g1857_p
+Net: g1881_p
+Net: g1884_p
+Net: g1897_u0_o
+Net: g1901_p
+Net: g1923_p
+Net: g1942_p
+Net: g1965_p
+Net: g1975_p
+Net: g1980_p
+Net: g2028_p
+Net: g2035_p
+Net: g2050_p
+Net: g2057_p
+Net: g2063_da
+Net: g2063_db
+Net: g2063_sb
+Net: g2066_p
+Net: g2067_p
+Net: g2068_p
+Net: g2069_p
+Net: g2091_p
+Net: g2103_p
+Net: g2108_p
+Net: g2113_p
+Net: g2116_p
+Net: g2128_p
+Net: g2130_p
+Net: g2141_p
+Net: g2385_p
+Net: g2412_p
+Net: g2413_p
+Net: g2494_p
+Net: g2506_p
+Net: g2651_p
+Net: g2674_p
+Net: g41_p
+Net: i_rx_phy_bit_cnt_0_
+Net: i_rx_phy_bit_cnt_2_
+Net: i_rx_phy_bit_stuff_err
+Net: i_rx_phy_bit_stuff_err_reg_Q
+Net: i_rx_phy_byte_err
+Net: i_rx_phy_byte_err_reg_Q
+Net: i_rx_phy_dpll_state_0_
+Net: i_rx_phy_dpll_state_1_
+Net: i_rx_phy_fs_ce_r1
+Net: i_rx_phy_fs_ce_r2
+Net: i_rx_phy_fs_state_0_
+Net: i_rx_phy_fs_state_2_
+Net: i_rx_phy_one_cnt_0_
+Net: i_rx_phy_one_cnt_1_
+Net: i_rx_phy_one_cnt_2_
+Net: i_rx_phy_rx_en
+Net: i_rx_phy_rx_valid1
+Net: i_rx_phy_rx_valid_r
+Net: i_rx_phy_rxd_r
+Net: i_rx_phy_rxd_s
+Net: i_rx_phy_rxd_s0
+Net: i_rx_phy_rxd_s1
+Net: i_rx_phy_rxd_s1_reg_Q
+Net: i_rx_phy_rxdn_s
+Net: i_rx_phy_rxdn_s0
+Net: i_rx_phy_rxdn_s_r
+Net: i_rx_phy_rxdn_s_r_reg_Q
+Net: i_rx_phy_rxdp_s
+Net: i_rx_phy_rxdp_s0
+Net: i_rx_phy_rxdp_s_r
+Net: i_rx_phy_rxdp_s_r_reg_Q
+Net: i_rx_phy_sd_nrzi
+Net: i_rx_phy_sd_r
+Net: i_rx_phy_se0_r
+Net: i_rx_phy_se0_r_reg_Q
+Net: i_rx_phy_se0_s
+Net: i_rx_phy_shift_en
+Net: i_rx_phy_sync_err
+Net: i_rx_phy_sync_err_reg_Q
+Net: i_tx_phy_append_eop
+Net: i_tx_phy_append_eop_sync1
+Net: i_tx_phy_append_eop_sync2
+Net: i_tx_phy_append_eop_sync4
+Net: i_tx_phy_bit_cnt_0_
+Net: i_tx_phy_bit_cnt_1_
+Net: i_tx_phy_bit_cnt_2_
+Net: i_tx_phy_data_done
+Net: i_tx_phy_hold_reg
+Net: i_tx_phy_hold_reg_10
+Net: i_tx_phy_hold_reg_4
+Net: i_tx_phy_hold_reg_5
+Net: i_tx_phy_hold_reg_6
+Net: i_tx_phy_hold_reg_7
+Net: i_tx_phy_hold_reg_8
+Net: i_tx_phy_hold_reg_9
+Net: i_tx_phy_hold_reg_d
+Net: i_tx_phy_hold_reg_d_11
+Net: i_tx_phy_hold_reg_d_12
+Net: i_tx_phy_hold_reg_d_13
+Net: i_tx_phy_hold_reg_d_14
+Net: i_tx_phy_hold_reg_d_15
+Net: i_tx_phy_hold_reg_d_17
+Net: i_tx_phy_hold_reg_d_reg_1__Q
+Net: i_tx_phy_hold_reg_d_reg_3__Q
+Net: i_tx_phy_hold_reg_d_reg_5__Q
+Net: i_tx_phy_hold_reg_d_reg_6__Q
+Net: i_tx_phy_ld_data
+Net: i_tx_phy_ld_data_reg_Q
+Net: i_tx_phy_one_cnt_0_
+Net: i_tx_phy_one_cnt_1_
+Net: i_tx_phy_one_cnt_2_
+Net: i_tx_phy_sd_bs_o
+Net: i_tx_phy_sd_nrzi_o
+Net: i_tx_phy_sd_raw_o
+Net: i_tx_phy_sft_done
+Net: i_tx_phy_sft_done_r
+Net: i_tx_phy_state_1_
+Net: i_tx_phy_state_2_
+Net: i_tx_phy_tx_ip
+Net: i_tx_phy_txoe_r1
+Net: i_tx_phy_txoe_r2
+Net: ispd_clk
+Net: n_10
+Net: n_100
+Net: n_103
+Net: n_105
+Net: n_106
+Net: n_108
+Net: n_11
+Net: n_111
+Net: n_112
+Net: n_115
+Net: n_116
+Net: n_118
+Net: n_12
+Net: n_120
+Net: n_121
+Net: n_122
+Net: n_123
+Net: n_124
+Net: n_125
+Net: n_126
+Net: n_127
+Net: n_130
+Net: n_131
+Net: n_132
+Net: n_133
+Net: n_138
+Net: n_139
+Net: n_141
+Net: n_142
+Net: n_15
+Net: n_150
+Net: n_152
+Net: n_153
+Net: n_154
+Net: n_155
+Net: n_157
+Net: n_161
+Net: n_163
+Net: n_164
+Net: n_165
+Net: n_166
+Net: n_167
+Net: n_168
+Net: n_169
+Net: n_170
+Net: n_172
+Net: n_175
+Net: n_176
+Net: n_18
+Net: n_182
+Net: n_183
+Net: n_184
+Net: n_185
+Net: n_186
+Net: n_191
+Net: n_192
+Net: n_193
+Net: n_195
+Net: n_197
+Net: n_198
+Net: n_201
+Net: n_203
+Net: n_204
+Net: n_209
+Net: n_21
+Net: n_210
+Net: n_213
+Net: n_217
+Net: n_22
+Net: n_222
+Net: n_223
+Net: n_224
+Net: n_225
+Net: n_226
+Net: n_227
+Net: n_228
+Net: n_229
+Net: n_230
+Net: n_231
+Net: n_232
+Net: n_233
+Net: n_235
+Net: n_237
+Net: n_238
+Net: n_239
+Net: n_240
+Net: n_241
+Net: n_243
+Net: n_244
+Net: n_245
+Net: n_246
+Net: n_248
+Net: n_251
+Net: n_252
+Net: n_254
+Net: n_255
+Net: n_256
+Net: n_257
+Net: n_258
+Net: n_259
+Net: n_263
+Net: n_265
+Net: n_266
+Net: n_267
+Net: n_268
+Net: n_269
+Net: n_27
+Net: n_273
+Net: n_274
+Net: n_275
+Net: n_276
+Net: n_277
+Net: n_278
+Net: n_28
+Net: n_280
+Net: n_283
+Net: n_288
+Net: n_289
+Net: n_290
+Net: n_291
+Net: n_292
+Net: n_293
+Net: n_294
+Net: n_296
+Net: n_297
+Net: n_299
+Net: n_300
+Net: n_301
+Net: n_304
+Net: n_306
+Net: n_307
+Net: n_308
+Net: n_309
+Net: n_310
+Net: n_311
+Net: n_312
+Net: n_313
+Net: n_316
+Net: n_317
+Net: n_318
+Net: n_319
+Net: n_320
+Net: n_322
+Net: n_323
+Net: n_324
+Net: n_325
+Net: n_33
+Net: n_330
+Net: n_331
+Net: n_332
+Net: n_333
+Net: n_334
+Net: n_337
+Net: n_338
+Net: n_339
+Net: n_340
+Net: n_341
+Net: n_342
+Net: n_343
+Net: n_344
+Net: n_347
+Net: n_35
+Net: n_350
+Net: n_351
+Net: n_352
+Net: n_353
+Net: n_354
+Net: n_355
+Net: n_359
+Net: n_360
+Net: n_361
+Net: n_362
+Net: n_364
+Net: n_365
+Net: n_366
+Net: n_367
+Net: n_368
+Net: n_369
+Net: n_37
+Net: n_370
+Net: n_373
+Net: n_375
+Net: n_377
+Net: n_378
+Net: n_380
+Net: n_384
+Net: n_385
+Net: n_386
+Net: n_387
+Net: n_388
+Net: n_389
+Net: n_390
+Net: n_391
+Net: n_392
+Net: n_394
+Net: n_395
+Net: n_400
+Net: n_401
+Net: n_404
+Net: n_405
+Net: n_406
+Net: n_407
+Net: n_409
+Net: n_410
+Net: n_411
+Net: n_413
+Net: n_414
+Net: n_415
+Net: n_416
+Net: n_417
+Net: n_420
+Net: n_421
+Net: n_423
+Net: n_424
+Net: n_425
+Net: n_426
+Net: n_427
+Net: n_428
+Net: n_431
+Net: n_432
+Net: n_433
+Net: n_434
+Net: n_435
+Net: n_436
+Net: n_439
+Net: n_440
+Net: n_443
+Net: n_444
+Net: n_446
+Net: n_447
+Net: n_449
+Net: n_450
+Net: n_452
+Net: n_453
+Net: n_454
+Net: n_455
+Net: n_456
+Net: n_457
+Net: n_458
+Net: n_459
+Net: n_460
+Net: n_461
+Net: n_462
+Net: n_467
+Net: n_471
+Net: n_472
+Net: n_479
+Net: n_48
+Net: n_480
+Net: n_481
+Net: n_482
+Net: n_483
+Net: n_484
+Net: n_485
+Net: n_486
+Net: n_487
+Net: n_489
+Net: n_49
+Net: n_490
+Net: n_492
+Net: n_493
+Net: n_499
+Net: n_50
+Net: n_505
+Net: n_506
+Net: n_507
+Net: n_509
+Net: n_51
+Net: n_511
+Net: n_52
+Net: n_523
+Net: n_529
+Net: n_53
+Net: n_538
+Net: n_539
+Net: n_54
+Net: n_540
+Net: n_55
+Net: n_559
+Net: n_56
+Net: n_567
+Net: n_57
+Net: n_573
+Net: n_574
+Net: n_58
+Net: n_583
+Net: n_588
+Net: n_590
+Net: n_593
+Net: n_598
+Net: n_60
+Net: n_604
+Net: n_61
+Net: n_628
+Net: n_629
+Net: n_63
+Net: n_631
+Net: n_632
+Net: n_64
+Net: n_66
+Net: n_660
+Net: n_661
+Net: n_665
+Net: n_666
+Net: n_69
+Net: n_697
+Net: n_699
+Net: n_7
+Net: n_70
+Net: n_700
+Net: n_701
+Net: n_703
+Net: n_704
+Net: n_706
+Net: n_707
+Net: n_708
+Net: n_709
+Net: n_71
+Net: n_710
+Net: n_722
+Net: n_726
+Net: n_727
+Net: n_734
+Net: n_735
+Net: n_737
+Net: n_74
+Net: n_741
+Net: n_742
+Net: n_743
+Net: n_748
+Net: n_749
+Net: n_752
+Net: n_753
+Net: n_754
+Net: n_755
+Net: n_756
+Net: n_758
+Net: n_759
+Net: n_763
+Net: n_764
+Net: n_767
+Net: n_77
+Net: n_782
+Net: n_783
+Net: n_785
+Net: n_786
+Net: n_788
+Net: n_794
+Net: n_796
+Net: n_8
+Net: n_800
+Net: n_804
+Net: n_81
+Net: n_840
+Net: n_841
+Net: n_85
+Net: n_852
+Net: n_864
+Net: n_873
+Net: n_878
+Net: n_88
+Net: n_882
+Net: n_884
+Net: n_885
+Net: n_888
+Net: n_894
+Net: n_9
+Net: n_90
+Net: n_91
+Net: n_910
+Net: n_911
+Net: n_913
+Net: n_914
+Net: n_915
+Net: n_916
+Net: n_919
+Net: n_920
+Net: n_921
+Net: n_922
+Net: n_923
+Net: n_924
+Net: n_925
+Net: n_926
+Net: n_927
+Net: n_928
+Net: n_929
+Net: n_930
+Net: n_932
+Net: n_933
+Net: n_934
+Net: n_935
+Net: n_937
+Net: n_938
+Net: n_940
+Net: n_941
+Net: n_942
+Net: n_943
+Net: n_944
+Net: n_945
+Net: n_947
+Net: n_948
+Net: n_949
+Net: n_951
+Net: n_952
+Net: n_957
+Net: n_958
+Net: n_959
+Net: n_960
+Net: n_961
+Net: n_962
+Net: n_963
+Net: n_965
+Net: n_966
+Net: n_967
+Net: n_968
+Net: n_969
+Net: n_97
+Net: n_970
+Net: n_971
+Net: n_972
+Net: n_974
+Net: n_976
+Net: n_977
+Net: n_980
+Net: n_981
+Net: n_982
+Net: n_984
+Net: n_988
+Net: n_989
+Net: n_990
+Net: n_991
+Net: n_992
+Net: phy_tx_mode
+Net: rst
+Net: rst_cnt_0_
+Net: rst_cnt_1_
+Net: rst_cnt_3_
+Net: rst_cnt_4_
+Net: rxd
+Net: rxdn
+Net: rxdp
+Net: txdn
+Net: txdp
+Net: txoe
+Net: usb_rst
+total count33
+
+Cell insts: 
+na02m80 33 33 input wire FE_RN_0_0 input wire n_629 output wire n_632 
+no02f80 34 34 input wire FE_RN_2_0 input wire FE_RN_1_0 output wire FE_RN_0_0 
+in01f80 35 35 input wire n_631 output wire FE_RN_1_0 
+in01f80 36 36 primary input rst output wire FE_RN_2_0 
+no02f80 37 37 input wire n_911 input wire n_913 output wire n_914 
+no02f80 38 38 input wire n_980 input wire n_947 output wire g11_p 
+in01f80 39 39 input wire g11_p output wire n_911 
+in01f80 40 40 input wire i_rx_phy_rx_en output wire n_540 
+in01f80 41 41 input wire n_794 output wire n_913 
+no02f80 42 42 input wire n_788 input wire n_981 output wire n_604 
+na02f80 43 43 input wire n_948 input wire n_796 output wire g15_p 
+in01f80 44 44 input wire g15_p output wire n_949 
+na03f80 45 45 input wire i_rx_phy_byte_err input wire i_rx_phy_sync_err input wire i_rx_phy_bit_stuff_err primary output RxError_o 
+in01f80 46 46 input wire n_632 output wire n_529 
+ao12f80 47 47 input wire FE_RN_2_0 input wire n_506 input wire n_660 output wire n_523 
+no02f80 48 48 input wire n_386 input wire n_416 output wire n_417 
+na02f80 49 49 input wire n_493 input wire n_440 output wire n_511 
+ao12f80 50 50 input wire FE_RN_2_0 input wire n_704 input wire n_935 output wire n_459 
+na02f80 51 51 input wire n_938 input wire n_480 output wire n_481 
+na02f80 52 52 input wire n_490 input wire n_786 output wire n_506 
+in01f80 53 53 input wire n_404 output wire n_423 
+na02f80 54 54 input wire n_380 input wire n_269 output wire n_404 
+no02f80 55 55 input wire n_472 input wire n_444 output wire n_499 
+ao12f80 56 56 input wire n_370 input wire n_384 input wire rst_cnt_3_ output wire n_386 
+na03f80 57 57 input wire n_782 input wire n_176 input wire n_783 output wire n_493 
+na02f80 58 58 input wire n_916 input wire n_74 output wire n_439 
+no02f80 59 59 input wire n_916 input wire n_467 output wire n_783 
+na02f80 60 60 input wire n_926 input wire n_982 output wire n_480 
+na02f80 61 61 input wire n_919 input wire n_914 output wire n_492 
+no02f80 62 62 input wire n_385 input wire n_416 output wire n_428 
+ao12f80 63 63 input wire n_384 input wire n_292 input wire n_256 output wire n_370 
+na03f80 64 64 input wire n_974 input wire n_462 input wire n_450 output wire n_507 
+ao12f80 65 65 input wire n_961 input wire n_359 input wire n_347 output wire n_414 
+in01f80 66 66 input wire n_754 output wire n_490 
+in01f80 67 67 input wire n_753 output wire n_461 
+in01f80 68 68 input wire n_753 output wire n_460 
+ao12f80 69 69 input wire n_27 input wire n_369 input wire n_337 output wire n_411 
+na02f80 70 70 input wire n_458 input wire n_974 output wire g1737_p 
+in01f80 71 71 input wire g1737_p output wire n_489 
+na02f80 72 72 input wire n_457 input wire n_974 output wire g1738_p 
+in01f80 73 73 input wire g1738_p output wire n_487 
+na02f80 74 74 input wire n_456 input wire n_974 output wire g1739_p 
+in01f80 75 75 input wire g1739_p output wire n_486 
+na02f80 76 76 input wire n_455 input wire n_974 output wire g1740_p 
+in01f80 77 77 input wire g1740_p output wire n_485 
+na02f80 78 78 input wire n_454 input wire n_974 output wire g1741_p 
+in01f80 79 79 input wire g1741_p output wire n_484 
+na02f80 80 80 input wire n_453 input wire n_974 output wire g1742_p 
+in01f80 81 81 input wire g1742_p output wire n_483 
+na02f80 82 82 input wire n_452 input wire n_974 output wire g1743_p 
+in01f80 83 83 input wire g1743_p output wire n_482 
+oa12f80 84 84 input wire i_rx_phy_se0_r input wire n_353 input wire i_rx_phy_bit_cnt_2_ output wire n_472 
+oa12f80 85 85 input wire n_252 input wire n_311 input wire n_384 output wire n_380 
+in01f80 86 86 input wire n_479 output wire n_505 
+na04m80 87 87 input wire n_248 input wire n_266 input wire n_426 input wire i_rx_phy_sd_nrzi output wire n_479 
+oa12f80 88 88 input wire n_447 input wire n_9 input wire n_885 output wire n_471 
+na02f80 89 89 input wire n_969 primary input rst output wire g1757_p 
+in01f80 90 90 input wire g1757_p output wire n_420 
+ao12f80 91 91 input wire n_318 input wire n_538 input wire n_539 output wire n_432 
+na02f80 92 92 input wire n_446 input wire g2674_p output wire n_447 
+na02f80 93 93 input wire n_446 input wire RxActive_o output wire n_444 
+na02f80 94 94 input wire i_rx_phy_rx_valid_r input wire n_446 output wire n_443 
+ao12f80 95 95 input wire n_400 input wire n_163 input wire n_342 output wire n_388 
+na02f80 96 96 input wire n_767 input wire n_410 output wire n_431 
+in01f80 97 97 input wire n_941 output wire n_467 
+na03f80 98 98 input wire n_425 input wire n_175 input wire n_949 output wire n_440 
+ao12f80 99 99 input wire n_368 input wire n_384 input wire n_306 output wire n_385 
+in01f80 100 100 input wire i_tx_phy_ld_data output wire g1776_sb 
+na02f80 101 101 primary input DataOut_i_0_ input wire g1776_sb output wire g1776_da 
+na02f80 102 102 input wire i_tx_phy_hold_reg input wire i_tx_phy_ld_data output wire g1776_db 
+na02f80 103 103 input wire g1776_da input wire g1776_db output wire n_458 
+in01f80 104 104 input wire i_tx_phy_ld_data output wire g1777_sb 
+na02f80 105 105 primary input DataOut_i_1_ input wire g1777_sb output wire g1777_da 
+na02f80 106 106 input wire i_tx_phy_hold_reg_4 input wire i_tx_phy_ld_data output wire g1777_db 
+na02f80 107 107 input wire g1777_da input wire g1777_db output wire n_457 
+in01f80 108 108 input wire i_tx_phy_ld_data output wire g1778_sb 
+na02f80 109 109 primary input DataOut_i_2_ input wire g1778_sb output wire g1778_da 
+na02f80 110 110 input wire i_tx_phy_hold_reg_5 input wire i_tx_phy_ld_data output wire g1778_db 
+na02f80 111 111 input wire g1778_da input wire g1778_db output wire n_456 
+in01f80 112 112 input wire i_tx_phy_ld_data output wire g1779_sb 
+na02f80 113 113 primary input DataOut_i_3_ input wire g1779_sb output wire g1779_da 
+na02f80 114 114 input wire i_tx_phy_hold_reg_6 input wire i_tx_phy_ld_data output wire g1779_db 
+na02f80 115 115 input wire g1779_da input wire g1779_db output wire n_455 
+in01f80 116 116 input wire i_tx_phy_ld_data output wire g1780_sb 
+na02f80 117 117 primary input DataOut_i_4_ input wire g1780_sb output wire g1780_da 
+na02f80 118 118 input wire i_tx_phy_hold_reg_7 input wire i_tx_phy_ld_data output wire g1780_db 
+na02f80 119 119 input wire g1780_da input wire g1780_db output wire n_454 
+in01f80 120 120 input wire i_tx_phy_ld_data output wire g1781_sb 
+na02f80 121 121 primary input DataOut_i_5_ input wire g1781_sb output wire g1781_da 
+na02f80 122 122 input wire i_tx_phy_hold_reg_8 input wire i_tx_phy_ld_data output wire g1781_db 
+na02f80 123 123 input wire g1781_da input wire g1781_db output wire n_453 
+in01f80 124 124 input wire i_tx_phy_ld_data output wire g1782_sb 
+na02f80 125 125 primary input DataOut_i_6_ input wire g1782_sb output wire g1782_da 
+na02f80 126 126 input wire i_tx_phy_hold_reg_9 input wire i_tx_phy_ld_data output wire g1782_db 
+na02f80 127 127 input wire g1782_da input wire g1782_db output wire n_452 
+no02f80 128 128 input wire n_232 input wire n_300 output wire n_369 
+na02f80 129 129 input wire n_142 input wire n_764 output wire n_347 
+no02f80 130 130 input wire n_307 input wire n_384 output wire n_368 
+na02f80 131 131 input wire n_198 input wire rst_cnt_3_ output wire n_292 
+na02f80 132 132 input wire n_197 input wire n_69 output wire n_256 
+no02f80 133 133 input wire n_377 input wire n_400 output wire n_415 
+ao12f80 134 134 input wire n_961 input wire n_152 input wire n_375 output wire n_427 
+na02f80 135 135 input wire n_434 primary input DataOut_i_7_ output wire n_462 
+na02f80 136 136 input wire i_tx_phy_hold_reg_10 input wire i_tx_phy_ld_data output wire n_450 
+ao12f80 137 137 input wire n_400 input wire n_154 input wire n_341 output wire n_401 
+na03f80 138 138 input wire n_421 input wire n_435 primary input rst output wire n_449 
+no02f80 139 139 input wire n_666 input wire n_540 output wire n_413 
+in01f80 140 140 input wire n_426 output wire n_446 
+na02f80 141 141 input wire n_424 input wire n_666 output wire n_426 
+ao12f80 142 142 input wire FE_RN_2_0 input wire n_435 input wire n_389 output wire n_436 
+no02f80 143 143 input wire n_424 input wire n_665 output wire n_425 
+na04m80 144 144 input wire n_764 input wire i_rx_phy_bit_cnt_2_ primary input rst input wire n_141 output wire n_410 
+in01f80 145 145 input wire i_tx_phy_ld_data output wire n_434 
+in01f80 146 146 input wire i_rx_phy_rxdn_s output wire n_424 
+ao12f80 147 147 input wire FE_RN_2_0 input wire n_63 input wire n_968 output wire n_409 
+ao12f80 148 148 input wire n_416 input wire n_251 input wire n_268 output wire n_367 
+ao12f80 149 149 input wire n_322 input wire n_330 input wire n_952 output wire n_538 
+ao12f80 150 150 input wire n_961 input wire n_355 input wire n_331 output wire n_407 
+na02f80 151 151 input wire n_308 primary input rst output wire n_366 
+ao12f80 152 152 input wire n_400 input wire n_332 input wire n_301 output wire n_395 
+ao12f80 153 153 input wire n_400 input wire n_344 input wire n_294 output wire n_394 
+ao12f80 154 154 input wire n_961 input wire n_157 input wire n_352 output wire n_406 
+ao12f80 155 155 input wire n_961 input wire n_354 input wire n_334 output wire n_405 
+ao12f80 156 156 input wire n_400 input wire n_161 input wire n_299 output wire n_378 
+na02f80 157 157 input wire n_138 input wire n_340 output wire n_342 
+ao12f80 158 158 input wire FE_RN_2_0 input wire n_267 input wire RxActive_o output wire n_365 
+na02f80 159 159 input wire n_304 input wire n_360 output wire n_392 
+ao12f80 160 160 input wire FE_RN_2_0 input wire n_153 input wire n_265 output wire n_364 
+oa12f80 161 161 input wire n_133 input wire n_231 input wire i_tx_phy_hold_reg_d_13 output wire n_232 
+in01f80 162 162 input wire n_274 output wire g1855_sb 
+na02f80 163 163 input wire rst_cnt_4_ input wire g1855_sb output wire g1855_da 
+na02f80 164 164 input wire n_11 input wire n_274 output wire g1855_db 
+na02f80 165 165 input wire g1855_da input wire g1855_db output wire n_311 
+ao12f80 166 166 input wire n_339 input wire n_343 input wire i_tx_phy_bit_cnt_2_ output wire n_377 
+no02f80 167 167 input wire n_155 input wire RxValid_o output wire g1857_p 
+in01f80 168 168 input wire g1857_p output wire n_433 
+na04m80 169 169 input wire n_195 input wire n_238 primary input rst input wire i_tx_phy_txoe_r1 output wire n_276 
+ao12f80 170 170 input wire n_391 input wire n_88 input wire n_390 output wire n_421 
+in01f80 171 171 input wire n_197 output wire n_198 
+no02f80 172 172 input wire n_274 input wire n_11 output wire n_275 
+na02f80 173 173 input wire n_121 input wire n_958 output wire n_375 
+na02f80 174 174 input wire n_116 input wire n_340 output wire n_341 
+no02f80 175 175 input wire n_313 input wire n_416 output wire n_362 
+ao12f80 176 176 input wire n_343 input wire n_126 input wire n_231 output wire n_339 
+na02f80 177 177 input wire n_223 input wire i_rx_phy_rxdn_s_r output wire n_310 
+na02f80 178 178 input wire n_227 input wire i_rx_phy_rxdp_s_r output wire n_309 
+na02f80 179 179 input wire n_280 input wire n_273 output wire n_338 
+no02f80 180 180 input wire n_390 input wire n_389 output wire n_391 
+na03f80 181 181 input wire n_390 input wire i_rx_phy_dpll_state_1_ input wire n_60 output wire n_435 
+na02f80 182 182 input wire n_278 input wire n_297 output wire n_361 
+ao12f80 183 183 input wire n_228 input wire n_254 input wire i_tx_phy_bit_cnt_2_ output wire n_337 
+oa12f80 184 184 input wire n_351 input wire n_290 input wire n_583 output wire n_387 
+ao22s80 185 185 input wire n_225 input wire i_tx_phy_sd_nrzi_o input wire n_873 input wire txdp output wire n_308 
+na04m80 186 186 input wire n_323 input wire n_350 input wire n_737 input wire n_108 output wire n_360 
+no02f80 187 187 input wire i_rx_phy_bit_cnt_2_ input wire n_141 output wire g1881_p 
+ao12f80 188 188 input wire g1881_p input wire i_rx_phy_bit_cnt_2_ input wire n_141 output wire n_142 
+ao12f80 189 189 input wire n_230 input wire n_132 input wire n_306 output wire n_307 
+no02f80 190 190 input wire i_tx_phy_one_cnt_2_ input wire n_51 output wire g1884_p 
+ao12f80 191 191 input wire g1884_p input wire i_tx_phy_one_cnt_2_ input wire n_51 output wire n_138 
+na03f80 192 192 input wire g2674_p input wire n_170 primary input rst output wire n_273 
+no02f80 193 193 input wire n_132 input wire n_70 output wire n_197 
+na02f80 194 194 input wire n_764 input wire i_rx_phy_shift_en primary output g1897_u0_o 
+no02f80 195 195 input wire n_258 input wire n_984 output wire n_340 
+na02f80 196 196 input wire n_118 input wire n_764 output wire n_334 
+na02f80 197 197 input wire n_764 input wire i_rx_phy_rx_valid1 output wire g1901_p 
+in01f80 198 198 input wire g1901_p output wire n_373 
+na02f80 199 199 input wire i_rx_phy_bit_cnt_2_ input wire n_763 output wire n_359 
+na02f80 200 200 input wire n_289 input wire n_165 output wire n_304 
+na02f80 201 201 input wire n_283 primary input rst output wire n_333 
+in01f80 202 202 input wire n_416 output wire n_269 
+na02f80 203 203 input wire n_191 primary input rst output wire n_416 
+na02f80 204 204 input wire n_106 input wire n_103 output wire n_268 
+no02f80 205 205 input wire n_132 input wire n_306 output wire n_230 
+na02f80 206 206 input wire n_343 input wire i_tx_phy_bit_cnt_0_ output wire n_332 
+na02f80 207 207 input wire n_296 input wire n_56 output wire n_301 
+na02f80 208 208 input wire n_343 input wire n_15 output wire n_344 
+na02f80 209 209 input wire n_37 input wire n_764 output wire n_331 
+na02f80 210 210 input wire n_930 input wire n_841 output wire n_330 
+na02f80 211 211 input wire n_353 input wire n_763 output wire n_354 
+na02f80 212 212 input wire i_rx_phy_bit_cnt_0_ input wire n_763 output wire n_355 
+no02f80 213 213 input wire n_255 input wire i_tx_phy_bit_cnt_2_ output wire n_300 
+na02f80 214 214 input wire n_71 input wire n_66 output wire n_274 
+no02f80 215 215 input wire n_312 input wire n_540 output wire g1923_p 
+in01f80 216 216 input wire g1923_p output wire n_390 
+na03f80 217 217 input wire n_325 input wire n_53 input wire g2674_p output wire n_352 
+na03f80 218 218 input wire n_350 input wire n_583 input wire n_800 output wire n_351 
+na03f80 219 219 input wire n_259 input wire n_50 input wire g2674_p output wire n_299 
+na03f80 220 220 input wire n_296 input wire i_tx_phy_sd_raw_o input wire n_85 output wire n_297 
+oa12f80 221 221 input wire n_131 input wire n_127 input wire i_rx_phy_rxd_s1 output wire n_229 
+na02f80 222 222 input wire n_169 input wire n_296 output wire n_294 
+oa12f80 223 223 input wire n_193 input wire n_97 input wire n_804 output wire n_228 
+ao22s80 224 224 input wire n_122 input wire n_266 input wire n_150 input wire i_rx_phy_sd_nrzi output wire n_267 
+oa12f80 225 225 input wire n_184 input wire n_186 input wire n_48 output wire n_265 
+in01f80 226 226 input wire n_263 output wire n_293 
+na04m80 227 227 input wire n_182 input wire n_15 input wire i_tx_phy_bit_cnt_2_ input wire n_77 output wire n_263 
+ao22s80 228 228 input wire n_100 input wire n_885 input wire i_tx_phy_sd_nrzi_o input wire n_873 output wire n_195 
+na02f80 229 229 input wire i_tx_phy_data_done input wire n_937 output wire g1942_p 
+in01f80 230 230 input wire g1942_p output wire n_350 
+no02f80 231 231 input wire n_210 input wire n_882 output wire n_296 
+na02f80 232 232 input wire n_182 input wire n_885 output wire n_343 
+in01f80 233 233 input wire n_324 output wire n_325 
+na02f80 234 234 input wire n_759 input wire i_rx_phy_sd_nrzi output wire n_324 
+in01f80 235 235 input wire n_258 output wire n_259 
+na02f80 236 236 input wire n_182 input wire i_tx_phy_sd_raw_o output wire n_258 
+no02f80 237 237 input wire n_929 input wire n_965 output wire n_323 
+na02f80 238 238 input wire n_574 input wire n_841 output wire n_257 
+in01f80 239 239 input wire n_573 output wire n_322 
+no02f80 240 240 input wire n_233 input wire n_318 output wire n_320 
+no02f80 241 241 input wire n_239 input wire n_318 output wire n_319 
+no02f80 242 242 input wire n_201 input wire n_318 output wire n_291 
+in01f80 243 243 input wire n_289 output wire n_290 
+na02f80 244 244 input wire n_965 input wire n_937 output wire g1965_p 
+in01f80 245 245 input wire g1965_p output wire n_289 
+no02f80 246 246 input wire n_237 input wire n_318 output wire n_317 
+no02f80 247 247 input wire n_235 input wire FE_RN_2_0 output wire n_316 
+no02f80 248 248 input wire n_204 input wire FE_RN_2_0 output wire n_288 
+na03f80 249 249 input wire i_tx_phy_hold_reg_d_14 input wire n_192 input wire i_tx_phy_bit_cnt_2_ output wire n_193 
+in01f80 250 250 input wire n_226 output wire n_227 
+na02f80 251 251 input wire i_rx_phy_rxdp_s0 input wire LineState_o_0_ output wire g1975_p 
+in01f80 252 252 input wire g1975_p output wire n_226 
+oa12f80 253 253 input wire n_183 input wire n_185 input wire n_224 output wire n_225 
+oa12f80 254 254 input wire n_927 input wire n_952 input wire n_224 output wire n_539 
+in01f80 255 255 input wire n_222 output wire n_223 
+na02f80 256 256 input wire i_rx_phy_rxdn_s0 input wire LineState_o_1_ output wire g1980_p 
+in01f80 257 257 input wire g1980_p output wire n_222 
+no02f80 258 258 input wire LineState_o_0_ input wire LineState_o_1_ output wire n_191 
+na03f80 259 259 input wire n_125 input wire i_tx_phy_hold_reg_d_17 input wire i_tx_phy_bit_cnt_2_ output wire n_133 
+ao12f80 260 260 input wire n_167 input wire n_192 input wire i_tx_phy_hold_reg_d output wire n_255 
+oa12f80 261 261 input wire n_172 input wire i_tx_phy_hold_reg_d_15 input wire n_168 output wire n_254 
+ao12f80 262 262 input wire n_213 input wire n_852 input wire txoe output wire n_283 
+ao12f80 263 263 input wire n_241 input wire n_384 input wire n_240 output wire n_313 
+na02f80 264 264 input wire n_246 input wire n_245 output wire n_312 
+in01f80 265 265 input wire n_66 output wire n_132 
+in01f80 266 266 input wire n_949 output wire n_782 
+na02f80 267 267 input wire i_rx_phy_rxd_s0 input wire n_130 output wire n_131 
+in01f80 268 268 input wire n_982 output wire n_217 
+no02f80 269 269 input wire n_185 input wire i_tx_phy_sd_nrzi_o output wire n_186 
+na02f80 270 270 input wire n_384 input wire rst_cnt_4_ output wire n_252 
+na02f80 271 271 input wire n_224 input wire n_183 output wire n_184 
+no03m80 272 272 input wire i_tx_phy_txoe_r2 input wire i_tx_phy_txoe_r1 input wire n_864 output wire n_213 
+na02f80 273 273 input wire n_277 input wire n_48 output wire n_280 
+na02f80 274 274 input wire n_384 input wire n_105 output wire n_251 
+in01f80 275 275 input wire n_759 output wire n_248 
+no02f80 276 276 input wire i_rx_phy_rxd_s0 input wire n_130 output wire n_127 
+in01f80 277 277 input wire n_182 output wire n_210 
+na02f80 278 278 input wire n_55 input wire n_50 output wire n_182 
+no02f80 279 279 input wire n_244 input wire n_243 output wire g2028_p 
+in01f80 280 280 input wire g2028_p output wire n_246 
+na02f80 281 281 input wire n_244 input wire n_243 output wire n_245 
+na02f80 282 282 input wire i_tx_phy_hold_reg_d_12 input wire n_124 output wire n_97 
+no02f80 283 283 input wire n_125 input wire n_124 output wire g2035_p 
+in01f80 284 284 input wire g2035_p output wire n_126 
+na02f80 285 285 input wire n_125 input wire n_124 output wire n_231 
+in01f80 286 286 input wire n_604 output wire n_209 
+no02f80 287 287 input wire n_384 input wire n_240 output wire n_241 
+in01f80 288 288 input wire n_175 output wire n_176 
+na02f80 289 289 input wire n_948 input wire n_794 output wire n_175 
+na02f80 290 290 input wire n_277 input wire i_tx_phy_sd_bs_o output wire n_278 
+no02f80 291 291 input wire n_804 input wire n_785 output wire g2050_p 
+in01f80 292 292 input wire g2050_p output wire n_172 
+in01f80 293 293 input wire n_123 output wire n_170 
+ao12f80 294 294 input wire i_tx_phy_append_eop_sync2 input wire n_7 input wire n_48 output wire n_123 
+na02f80 295 295 input wire n_804 input wire n_168 output wire n_169 
+no02f80 296 296 input wire n_168 input wire i_tx_phy_hold_reg_d_11 output wire n_167 
+ao12f80 297 297 input wire n_164 input wire n_10 input wire i_tx_phy_tx_ip output wire n_166 
+ao12f80 298 298 input wire n_164 input wire n_888 input wire n_737 output wire n_165 
+no02f80 299 299 input wire i_rx_phy_sd_r input wire n_243 output wire g2057_p 
+ao12f80 300 300 input wire g2057_p input wire i_rx_phy_sd_r input wire n_243 output wire n_122 
+oa12f80 301 301 input wire n_35 input wire i_tx_phy_sd_bs_o input wire i_tx_phy_sd_nrzi_o output wire n_100 
+ao22s80 302 302 input wire i_tx_phy_tx_ip input wire n_885 input wire n_238 input wire n_984 output wire n_239 
+ao22s80 303 303 input wire i_tx_phy_append_eop input wire g2674_p input wire i_tx_phy_append_eop_sync1 input wire n_984 output wire n_237 
+ao22s80 304 304 input wire i_tx_phy_append_eop_sync1 input wire n_885 input wire i_tx_phy_append_eop_sync2 input wire n_864 output wire n_235 
+ao22s80 305 305 input wire i_tx_phy_append_eop_sync4 input wire n_852 input wire n_48 input wire g2674_p output wire n_204 
+in01f80 306 306 input wire n_852 output wire g2063_sb 
+na02f80 307 307 input wire n_130 input wire g2063_sb output wire g2063_da 
+na02f80 308 308 input wire i_rx_phy_sd_r input wire n_852 output wire g2063_db 
+na02f80 309 309 input wire g2063_da input wire g2063_db output wire n_203 
+ao22s80 310 310 input wire i_tx_phy_txoe_r2 input wire n_852 input wire i_tx_phy_txoe_r1 input wire g2674_p output wire n_201 
+ao22s80 311 311 input wire n_238 input wire g2674_p input wire i_tx_phy_txoe_r1 input wire n_984 output wire n_233 
+no02f80 312 312 input wire n_105 input wire n_240 output wire g2066_p 
+ao12f80 313 313 input wire g2066_p input wire n_105 input wire n_240 output wire n_106 
+no02f80 314 314 input wire n_120 input wire i_rx_phy_one_cnt_0_ output wire g2067_p 
+ao12f80 315 315 input wire g2067_p input wire n_120 input wire i_rx_phy_one_cnt_0_ output wire n_121 
+no02f80 316 316 input wire n_353 input wire i_rx_phy_bit_cnt_0_ output wire g2068_p 
+ao12f80 317 317 input wire g2068_p input wire n_353 input wire i_rx_phy_bit_cnt_0_ output wire n_118 
+no02f80 318 318 input wire n_115 input wire i_tx_phy_one_cnt_0_ output wire g2069_p 
+ao12f80 319 319 input wire g2069_p input wire n_115 input wire i_tx_phy_one_cnt_0_ output wire n_116 
+in01f80 320 320 input wire i_tx_phy_sft_done_r output wire n_64 
+in01f80 321 321 input wire i_rx_phy_rxd_r output wire n_244 
+na02f80 322 322 input wire i_tx_phy_one_cnt_2_ input wire n_873 output wire n_163 
+na02f80 323 323 input wire i_tx_phy_one_cnt_0_ input wire n_873 output wire n_161 
+na02f80 324 324 input wire i_tx_phy_append_eop input wire n_12 output wire n_63 
+no02f80 325 325 primary input phy_tx_mode input wire n_984 output wire g2091_p 
+in01f80 326 326 input wire g2091_p output wire n_183 
+in01f80 327 327 input wire n_111 output wire n_112 
+na02f80 328 328 input wire n_910 input wire n_91 output wire n_111 
+in01f80 329 329 input wire n_103 output wire n_384 
+no02f80 330 330 input wire n_984 input wire usb_rst output wire n_103 
+na02f80 331 331 input wire n_57 input wire i_tx_phy_bit_cnt_0_ output wire n_168 
+na02f80 332 332 input wire n_852 input wire i_rx_phy_shift_en output wire n_991 
+no02f80 333 333 input wire n_878 input wire RxActive_o output wire n_61 
+na02f80 334 334 primary input rst input wire n_882 output wire g2103_p 
+in01f80 335 335 input wire g2103_p output wire n_277 
+na02f80 336 336 input wire i_rx_phy_one_cnt_0_ input wire n_873 output wire n_157 
+in01f80 337 337 input wire n_598 output wire n_661 
+na02f80 338 338 input wire i_rx_phy_rx_valid_r input wire n_882 output wire g2108_p 
+in01f80 339 339 input wire g2108_p output wire n_155 
+na02f80 340 340 input wire n_115 input wire n_873 output wire n_154 
+na02f80 341 341 input wire i_tx_phy_bit_cnt_1_ input wire n_56 output wire n_804 
+in01f80 342 342 input wire n_389 output wire n_81 
+no02f80 343 343 input wire i_rx_phy_dpll_state_1_ input wire n_60 output wire g2113_p 
+in01f80 344 344 input wire g2113_p output wire n_389 
+na02f80 345 345 input wire n_852 input wire txdn output wire n_153 
+na02f80 346 346 input wire n_120 input wire n_873 output wire n_152 
+na02f80 347 347 input wire n_57 input wire n_56 output wire g2116_p 
+in01f80 348 348 input wire g2116_p output wire n_192 
+in01f80 349 349 input wire n_164 output wire n_108 
+na02f80 350 350 primary input TxValid_i primary input rst output wire n_164 
+in01f80 351 351 input wire n_697 output wire n_90 
+no02f80 352 352 input wire n_52 input wire n_28 output wire n_58 
+no02f80 353 353 input wire n_57 input wire n_56 output wire n_125 
+no02f80 354 354 input wire i_rx_phy_dpll_state_1_ input wire i_rx_phy_dpll_state_0_ output wire n_88 
+in01f80 355 355 input wire n_400 output wire n_85 
+no02f80 356 356 input wire n_27 input wire n_318 output wire g2128_p 
+in01f80 357 357 input wire g2128_p output wire n_400 
+in01f80 358 358 input wire n_150 output wire n_266 
+no02f80 359 359 input wire n_884 input wire n_509 output wire g2130_p 
+in01f80 360 360 input wire g2130_p output wire n_150 
+no02f80 361 361 input wire n_70 input wire n_69 output wire n_71 
+no02f80 362 362 input wire n_37 input wire n_18 output wire n_141 
+no02f80 363 363 input wire n_21 input wire n_22 output wire n_66 
+no02f80 364 364 input wire n_53 input wire n_52 output wire n_54 
+na02f80 365 365 input wire i_tx_phy_sd_bs_o input wire i_tx_phy_sd_nrzi_o output wire n_35 
+no02f80 366 366 input wire n_50 input wire n_49 output wire n_51 
+no02f80 367 367 input wire n_49 input wire n_33 output wire n_55 
+no02f80 368 368 input wire n_8 input wire n_984 output wire g2141_p 
+in01f80 369 369 input wire g2141_p output wire n_185 
+in01f80 370 370 input wire n_559 output wire n_48 
+in01f80 371 371 input wire n_306 output wire n_70 
+in01f80 372 372 input wire i_rx_phy_bit_cnt_0_ output wire n_37 
+in01f80 373 373 input wire i_tx_phy_one_cnt_0_ output wire n_50 
+in01f80 374 374 input wire i_rx_phy_dpll_state_0_ output wire n_60 
+in01f80 375 375 primary input phy_tx_mode output wire n_8 
+in01f80 376 376 input wire n_52 output wire n_120 
+in01f80 377 377 input wire i_rx_phy_one_cnt_1_ output wire n_52 
+in01f80 378 378 input wire i_tx_phy_append_eop_sync2 output wire n_12 
+in01f80 379 379 input wire rst_cnt_4_ output wire n_11 
+in01f80 380 380 input wire n_238 output wire n_27 
+in01f80 381 381 input wire n_22 output wire n_105 
+in01f80 382 382 input wire rst_cnt_1_ output wire n_22 
+in01f80 383 383 input wire i_tx_phy_append_eop_sync4 output wire n_7 
+in01f80 384 384 input wire n_56 output wire n_77 
+in01f80 385 385 input wire i_tx_phy_bit_cnt_0_ output wire n_56 
+in01f80 386 386 input wire n_57 output wire n_15 
+in01f80 387 387 input wire i_tx_phy_bit_cnt_1_ output wire n_57 
+in01f80 388 388 input wire RxActive_o output wire n_509 
+in01f80 389 389 input wire i_tx_phy_bit_cnt_2_ output wire n_124 
+in01f80 390 390 primary input rst output wire n_318 
+in01f80 391 391 input wire n_49 output wire n_115 
+in01f80 392 392 input wire i_tx_phy_one_cnt_1_ output wire n_49 
+in01f80 393 393 input wire n_28 output wire n_139 
+in01f80 394 394 input wire i_rx_phy_one_cnt_2_ output wire n_28 
+in01f80 395 395 input wire n_91 output wire n_74 
+in01f80 396 396 input wire n_980 output wire n_91 
+in01f80 397 397 input wire i_tx_phy_data_done output wire n_10 
+in01f80 398 398 input wire n_21 output wire n_240 
+in01f80 399 399 input wire rst_cnt_0_ output wire n_21 
+in01f80 400 400 input wire rst_cnt_3_ output wire n_69 
+in01f80 401 401 input wire i_rx_phy_se0_s output wire n_9 
+in01f80 402 402 input wire n_353 output wire n_18 
+in01f80 403 403 input wire i_tx_phy_one_cnt_2_ output wire n_33 
+in01f80 404 404 input wire n_243 output wire n_130 
+in01f80 405 405 input wire i_rx_phy_rxd_s output wire n_243 
+in01f80 406 406 input wire i_rx_phy_one_cnt_0_ output wire n_53 
+in01f80 407 407 input wire n_852 output wire n_988 
+na02f80 408 408 input wire n_885 input wire n_559 output wire g2385_p 
+in01f80 409 409 input wire g2385_p output wire n_567 
+na02f80 410 410 input wire n_840 input wire n_567 output wire n_573 
+na02f80 411 411 input wire n_972 input wire n_894 output wire n_574 
+no02f80 412 412 input wire n_932 input wire n_952 output wire n_590 
+no02f80 413 413 input wire n_952 input wire n_735 output wire n_598 
+na02f80 414 414 input wire n_604 input wire n_926 output wire n_938 
+no02f80 415 415 input wire n_481 input wire n_628 output wire g2412_p 
+in01f80 416 416 input wire g2412_p output wire n_629 
+no02f80 417 417 input wire n_753 input wire n_727 output wire g2413_p 
+in01f80 418 418 input wire g2413_p output wire n_628 
+na02f80 419 419 input wire n_753 input wire n_74 output wire n_631 
+na02f80 420 420 input wire n_749 input wire n_754 output wire n_660 
+in01f80 421 421 input wire n_666 output wire n_665 
+in01f80 422 422 input wire i_rx_phy_rxdp_s output wire n_666 
+na02f80 423 423 input wire n_910 input wire n_980 output wire n_697 
+in01f80 424 424 input wire n_703 output wire n_704 
+na02f80 425 425 input wire n_257 input wire n_929 output wire n_701 
+na02f80 426 426 input wire n_707 input wire n_708 output wire n_709 
+na03f80 427 427 input wire n_706 input wire n_461 input wire n_511 output wire n_707 
+no02f80 428 428 input wire n_318 input wire n_540 output wire n_706 
+na02f80 429 429 input wire n_461 input wire n_511 output wire n_710 
+na02f80 430 430 input wire n_741 input wire n_726 output wire n_727 
+no02f80 431 431 input wire n_788 input wire n_697 output wire n_722 
+na03f80 432 432 input wire n_439 input wire n_794 input wire n_90 output wire n_726 
+in01f80 433 433 input wire n_735 output wire n_734 
+in01f80 434 434 input wire n_735 output wire n_737 
+na02f80 435 435 input wire n_741 input wire n_742 output wire g2494_p 
+in01f80 436 436 input wire g2494_p output wire n_743 
+na02f80 437 437 input wire n_467 input wire n_914 output wire n_742 
+na03f80 438 438 input wire n_112 input wire n_788 input wire n_942 output wire n_748 
+in01f80 439 439 input wire n_941 output wire n_942 
+ao12f80 440 440 input wire n_318 input wire n_755 input wire n_756 output wire n_758 
+oa12f80 441 441 input wire n_754 input wire n_944 input wire n_752 output wire n_755 
+na02f80 442 442 input wire n_480 input wire n_742 output wire n_752 
+in01f80 443 443 input wire n_753 output wire n_754 
+na03f80 444 444 input wire n_61 input wire n_426 input wire n_9 output wire n_753 
+no02f80 445 445 input wire n_910 input wire n_460 output wire g2506_p 
+in01f80 446 446 input wire g2506_p output wire n_756 
+na03f80 447 447 input wire n_763 input wire i_rx_phy_rx_valid1 primary input rst output wire n_767 
+in01f80 448 448 input wire n_763 output wire n_764 
+na02f80 449 449 input wire n_759 input wire n_885 output wire n_763 
+na02f80 450 450 input wire n_58 input wire n_53 output wire n_759 
+in01f80 451 451 input wire n_788 output wire n_786 
+in01f80 452 452 input wire n_965 output wire n_800 
+in01f80 453 453 input wire n_841 output wire n_840 
+in01f80 454 454 input wire g2674_p output wire n_852 
+in01f80 455 455 input wire n_885 output wire n_864 
+in01f80 456 456 input wire n_885 output wire n_873 
+in01f80 457 457 input wire n_885 output wire n_878 
+in01f80 458 458 input wire n_885 output wire n_882 
+na03f80 459 459 input wire n_735 input wire n_952 input wire n_894 output wire n_841 
+in01f80 460 460 input wire n_885 output wire n_884 
+in01f80 461 461 input wire n_929 output wire n_888 
+in01f80 462 462 input wire n_929 output wire n_894 
+no02f80 463 463 input wire n_923 input wire n_924 output wire n_925 
+ao12f80 464 464 input wire n_922 input wire n_915 input wire n_916 output wire n_923 
+na02f80 465 465 input wire n_920 input wire n_921 output wire n_922 
+ao22s80 466 466 input wire n_919 input wire n_945 input wire n_722 input wire n_916 output wire n_920 
+ao22s80 467 467 input wire n_927 input wire n_928 input wire n_934 input wire n_929 output wire n_935 
+no02f80 468 468 input wire n_888 input wire n_661 output wire n_927 
+no02f80 469 469 input wire n_224 input wire n_888 output wire n_928 
+na02f80 470 470 input wire n_930 input wire n_933 output wire n_934 
+na04m80 471 471 input wire n_735 input wire n_984 input wire n_952 input wire n_929 output wire n_930 
+na02f80 472 472 input wire n_965 input wire n_932 output wire n_933 
+na02f80 473 473 input wire n_64 input wire i_tx_phy_sft_done output wire n_932 
+in01f80 474 474 input wire n_932 output wire n_937 
+na02f80 475 475 input wire n_938 input wire n_943 output wire n_944 
+na03f80 476 476 input wire n_112 input wire n_940 input wire n_942 output wire n_943 
+in01f80 477 477 input wire n_794 output wire n_940 
+na02f80 478 478 input wire n_413 input wire n_424 output wire n_941 
+no02f80 479 479 input wire n_794 input wire n_111 output wire n_945 
+no02f80 480 480 input wire n_980 input wire n_947 output wire n_948 
+in01f80 481 481 input wire i_rx_phy_fs_state_2_ output wire n_947 
+in01f80 482 482 input wire n_796 output wire n_788 
+no03m80 483 483 input wire n_929 input wire n_952 input wire n_735 output wire n_583 
+in01f80 484 484 input wire n_951 output wire n_952 
+in01f80 485 485 input wire i_tx_phy_state_2_ output wire n_951 
+in01f80 486 486 input wire i_tx_phy_state_1_ output wire n_735 
+ao12f80 487 487 input wire n_961 input wire n_959 input wire n_960 output wire n_962 
+no02f80 488 488 input wire n_139 input wire n_54 output wire g2651_p 
+ao12f80 489 489 input wire g2651_p input wire n_139 input wire n_54 output wire n_957 
+no02f80 490 490 input wire n_984 input wire n_324 output wire n_958 
+na02f80 491 491 input wire i_rx_phy_shift_en primary input rst output wire n_961 
+na04m80 492 492 input wire n_963 input wire n_966 input wire n_967 input wire n_968 output wire n_969 
+oa12f80 493 493 input wire n_965 input wire n_734 input wire n_937 output wire n_966 
+na02f80 494 494 input wire n_583 input wire n_737 output wire n_967 
+ao12f80 495 495 input wire n_318 input wire n_970 input wire n_974 output wire n_976 
+na02f80 496 496 input wire n_559 input wire i_tx_phy_tx_ip output wire n_970 
+na03f80 497 497 input wire n_972 input wire n_894 primary input TxValid_i output wire n_974 
+in01f80 498 498 input wire n_971 output wire n_972 
+na02f80 499 499 input wire n_735 input wire n_951 output wire n_971 
+in01f80 500 500 input wire n_974 output wire n_977 
+no02f80 501 501 input wire n_913 input wire n_981 output wire n_982 
+in01f80 502 502 input wire n_796 output wire n_794 
+na02f80 503 503 input wire n_980 input wire i_rx_phy_fs_state_2_ output wire n_981 
+in01f80 504 504 input wire i_rx_phy_fs_state_0_ output wire n_980 
+in01f80 505 505 input wire i_rx_phy_fs_state_2_ output wire n_910 
+na02f80 506 506 input wire n_990 input wire n_991 output wire n_992 
+na02f80 507 507 input wire n_988 input wire n_989 output wire n_990 
+in01f80 508 508 input wire n_984 output wire g2674_p 
+in01f80 509 509 input wire n_885 output wire n_984 
+na02f80 510 510 input wire n_710 input wire n_509 output wire n_989 
+na03f80 511 511 input wire n_443 input wire RxActive_o primary input rst output wire n_708 
+in01f80 512 512 input wire n_224 output wire n_559 
+na02f80 513 513 input wire n_957 input wire n_958 output wire n_959 
+na03f80 514 514 input wire n_743 input wire n_938 input wire n_748 output wire n_749 
+no02f80 515 515 input wire i_tx_phy_data_done input wire n_929 output wire n_593 
+na02f80 516 516 input wire n_873 input wire n_139 output wire n_960 
+na02f80 517 517 input wire n_722 input wire n_926 output wire n_741 
+na04m80 518 518 input wire n_699 input wire n_700 input wire n_701 input wire n_968 output wire n_703 
+ao12f80 519 519 input wire n_977 input wire n_840 input wire n_567 output wire n_699 
+na03f80 520 520 input wire n_559 input wire n_734 input wire n_927 output wire n_963 
+no02f80 521 521 input wire n_588 input wire n_888 output wire g41_p 
+in01f80 522 522 input wire g41_p output wire n_700 
+na03f80 523 523 input wire n_737 input wire n_593 input wire n_590 output wire n_968 
+no02f80 524 524 input wire n_971 input wire n_894 output wire n_965 
+in01f80 525 525 input wire n_583 output wire n_588 
+na03f80 526 526 input wire n_492 input wire n_217 input wire n_209 output wire n_915 
+in01f80 527 527 input wire n_916 output wire n_926 
+na03f80 528 528 input wire n_666 input wire i_rx_phy_rxdn_s input wire i_rx_phy_rx_en output wire n_916 
+na03f80 529 529 input wire n_788 input wire n_112 input wire n_919 output wire n_921 
+in01f80 530 530 input wire n_942 output wire n_919 
+na02f80 531 531 input wire n_754 input wire n_509 output wire n_924 
+ms00f80 532 532 clk ispd_clk input wire n_407 output wire i_rx_phy_bit_cnt_0_ 
+ms00f80 533 533 clk ispd_clk input wire n_405 output wire n_353 
+ms00f80 534 534 clk ispd_clk input wire n_414 output wire i_rx_phy_bit_cnt_2_ 
+ms00f80 535 535 clk ispd_clk input wire n_505 output wire i_rx_phy_bit_stuff_err_reg_Q 
+in01f80 536 536 input wire i_rx_phy_bit_stuff_err_reg_Q output wire i_rx_phy_bit_stuff_err 
+ms00f80 537 537 clk ispd_clk input wire n_499 output wire i_rx_phy_byte_err_reg_Q 
+in01f80 538 538 input wire i_rx_phy_byte_err_reg_Q output wire i_rx_phy_byte_err 
+ms00f80 539 539 clk ispd_clk input wire n_449 output wire i_rx_phy_dpll_state_0_ 
+ms00f80 540 540 clk ispd_clk input wire n_436 output wire i_rx_phy_dpll_state_1_ 
+ms00f80 541 541 clk ispd_clk input wire n_81 output wire i_rx_phy_fs_ce_r1 
+ms00f80 542 542 clk ispd_clk input wire i_rx_phy_fs_ce_r1 output wire i_rx_phy_fs_ce_r2 
+ms00f80 543 543 clk ispd_clk input wire i_rx_phy_fs_ce_r2 output wire n_885 
+ms00f80 544 544 clk ispd_clk input wire n_529 output wire i_rx_phy_fs_state_0_ 
+ms00f80 545 545 clk ispd_clk input wire n_523 output wire n_796 
+ms00f80 546 546 clk ispd_clk input wire n_758 output wire i_rx_phy_fs_state_2_ 
+ms00f80 547 547 clk ispd_clk input wire DataIn_o_1_ primary output DataIn_o_0_ 
+ms00f80 548 548 clk ispd_clk input wire DataIn_o_2_ primary output DataIn_o_1_ 
+ms00f80 549 549 clk ispd_clk input wire DataIn_o_3_ primary output DataIn_o_2_ 
+ms00f80 550 550 clk ispd_clk input wire DataIn_o_4_ primary output DataIn_o_3_ 
+ms00f80 551 551 clk ispd_clk input wire DataIn_o_5_ primary output DataIn_o_4_ 
+ms00f80 552 552 clk ispd_clk input wire DataIn_o_6_ primary output DataIn_o_5_ 
+ms00f80 553 553 clk ispd_clk input wire DataIn_o_7_ primary output DataIn_o_6_ 
+ms00f80 554 554 clk ispd_clk input wire i_rx_phy_sd_nrzi primary output DataIn_o_7_ 
+ms00f80 555 555 clk ispd_clk input wire n_406 output wire i_rx_phy_one_cnt_0_ 
+ms00f80 556 556 clk ispd_clk input wire n_427 output wire i_rx_phy_one_cnt_1_ 
+ms00f80 557 557 clk ispd_clk input wire n_962 output wire i_rx_phy_one_cnt_2_ 
+ms00f80 558 558 clk ispd_clk input wire n_709 primary output RxActive_o 
+ms00f80 559 559 clk ispd_clk input wire txoe output wire i_rx_phy_rx_en 
+ms00f80 560 560 clk ispd_clk input wire n_431 output wire i_rx_phy_rx_valid1 
+ms00f80 561 561 clk ispd_clk input wire n_433 output wire i_rx_phy_rx_valid_r 
+ms00f80 562 562 clk ispd_clk input wire n_373 primary output RxValid_o 
+ms00f80 563 563 clk ispd_clk input wire n_130 output wire i_rx_phy_rxd_r 
+ms00f80 564 564 clk ispd_clk primary input rxd output wire i_rx_phy_rxd_s0 
+ms00f80 565 565 clk ispd_clk input wire i_rx_phy_rxd_s0 output wire i_rx_phy_rxd_s1_reg_Q 
+in01f80 566 566 input wire i_rx_phy_rxd_s1_reg_Q output wire i_rx_phy_rxd_s1 
+ms00f80 567 567 clk ispd_clk input wire n_229 output wire i_rx_phy_rxd_s 
+ms00f80 568 568 clk ispd_clk primary input rxdn output wire i_rx_phy_rxdn_s0 
+ms00f80 569 569 clk ispd_clk input wire i_rx_phy_rxdn_s0 primary output LineState_o_1_ 
+ms00f80 570 570 clk ispd_clk input wire n_222 output wire i_rx_phy_rxdn_s_r_reg_Q 
+in01f80 571 571 input wire i_rx_phy_rxdn_s_r_reg_Q output wire i_rx_phy_rxdn_s_r 
+ms00f80 572 572 clk ispd_clk input wire n_310 output wire i_rx_phy_rxdn_s 
+ms00f80 573 573 clk ispd_clk primary input rxdp output wire i_rx_phy_rxdp_s0 
+ms00f80 574 574 clk ispd_clk input wire i_rx_phy_rxdp_s0 primary output LineState_o_0_ 
+ms00f80 575 575 clk ispd_clk input wire n_226 output wire i_rx_phy_rxdp_s_r_reg_Q 
+in01f80 576 576 input wire i_rx_phy_rxdp_s_r_reg_Q output wire i_rx_phy_rxdp_s_r 
+ms00f80 577 577 clk ispd_clk input wire n_309 output wire i_rx_phy_rxdp_s 
+ms00f80 578 578 clk ispd_clk input wire n_365 output wire i_rx_phy_sd_nrzi 
+ms00f80 579 579 clk ispd_clk input wire n_203 output wire i_rx_phy_sd_r 
+ms00f80 580 580 clk ispd_clk input wire n_446 output wire i_rx_phy_se0_r_reg_Q 
+in01f80 581 581 input wire i_rx_phy_se0_r_reg_Q output wire i_rx_phy_se0_r 
+ms00f80 582 582 clk ispd_clk input wire n_471 output wire i_rx_phy_se0_s 
+ms00f80 583 583 clk ispd_clk input wire n_992 output wire i_rx_phy_shift_en 
+ms00f80 584 584 clk ispd_clk input wire n_925 output wire i_rx_phy_sync_err_reg_Q 
+in01f80 585 585 input wire i_rx_phy_sync_err_reg_Q output wire i_rx_phy_sync_err 
+ms00f80 586 586 clk ispd_clk input wire n_392 primary output TxReady_o 
+ms00f80 587 587 clk ispd_clk input wire n_409 output wire i_tx_phy_append_eop 
+ms00f80 588 588 clk ispd_clk input wire n_317 output wire i_tx_phy_append_eop_sync1 
+ms00f80 589 589 clk ispd_clk input wire n_316 output wire i_tx_phy_append_eop_sync2 
+ms00f80 590 590 clk ispd_clk input wire n_338 output wire n_224 
+ms00f80 591 591 clk ispd_clk input wire n_288 output wire i_tx_phy_append_eop_sync4 
+ms00f80 592 592 clk ispd_clk input wire n_395 output wire i_tx_phy_bit_cnt_0_ 
+ms00f80 593 593 clk ispd_clk input wire n_394 output wire i_tx_phy_bit_cnt_1_ 
+ms00f80 594 594 clk ispd_clk input wire n_415 output wire i_tx_phy_bit_cnt_2_ 
+ms00f80 595 595 clk ispd_clk input wire n_166 output wire i_tx_phy_data_done 
+ms00f80 596 596 clk ispd_clk input wire i_tx_phy_hold_reg output wire i_tx_phy_hold_reg_d 
+ms00f80 597 597 clk ispd_clk input wire i_tx_phy_hold_reg_4 output wire i_tx_phy_hold_reg_d_reg_1__Q 
+in01f80 598 598 input wire i_tx_phy_hold_reg_d_reg_1__Q output wire i_tx_phy_hold_reg_d_11 
+ms00f80 599 599 clk ispd_clk input wire i_tx_phy_hold_reg_5 output wire i_tx_phy_hold_reg_d_12 
+ms00f80 600 600 clk ispd_clk input wire i_tx_phy_hold_reg_6 output wire i_tx_phy_hold_reg_d_reg_3__Q 
+in01f80 601 601 input wire i_tx_phy_hold_reg_d_reg_3__Q output wire i_tx_phy_hold_reg_d_13 
+ms00f80 602 602 clk ispd_clk input wire i_tx_phy_hold_reg_7 output wire i_tx_phy_hold_reg_d_14 
+ms00f80 603 603 clk ispd_clk input wire i_tx_phy_hold_reg_8 output wire i_tx_phy_hold_reg_d_reg_5__Q 
+in01f80 604 604 input wire i_tx_phy_hold_reg_d_reg_5__Q output wire i_tx_phy_hold_reg_d_15 
+ms00f80 605 605 clk ispd_clk input wire i_tx_phy_hold_reg_9 output wire i_tx_phy_hold_reg_d_reg_6__Q 
+in01f80 606 606 input wire i_tx_phy_hold_reg_d_reg_6__Q output wire n_785 
+ms00f80 607 607 clk ispd_clk input wire i_tx_phy_hold_reg_10 output wire i_tx_phy_hold_reg_d_17 
+ms00f80 608 608 clk ispd_clk input wire n_489 output wire i_tx_phy_hold_reg 
+ms00f80 609 609 clk ispd_clk input wire n_487 output wire i_tx_phy_hold_reg_4 
+ms00f80 610 610 clk ispd_clk input wire n_486 output wire i_tx_phy_hold_reg_5 
+ms00f80 611 611 clk ispd_clk input wire n_485 output wire i_tx_phy_hold_reg_6 
+ms00f80 612 612 clk ispd_clk input wire n_484 output wire i_tx_phy_hold_reg_7 
+ms00f80 613 613 clk ispd_clk input wire n_483 output wire i_tx_phy_hold_reg_8 
+ms00f80 614 614 clk ispd_clk input wire n_482 output wire i_tx_phy_hold_reg_9 
+ms00f80 615 615 clk ispd_clk input wire n_507 output wire i_tx_phy_hold_reg_10 
+ms00f80 616 616 clk ispd_clk input wire n_387 output wire i_tx_phy_ld_data_reg_Q 
+in01f80 617 617 input wire i_tx_phy_ld_data_reg_Q output wire i_tx_phy_ld_data 
+ms00f80 618 618 clk ispd_clk input wire n_378 output wire i_tx_phy_one_cnt_0_ 
+ms00f80 619 619 clk ispd_clk input wire n_401 output wire i_tx_phy_one_cnt_1_ 
+ms00f80 620 620 clk ispd_clk input wire n_388 output wire i_tx_phy_one_cnt_2_ 
+ms00f80 621 621 clk ispd_clk input wire n_361 output wire i_tx_phy_sd_bs_o 
+ms00f80 622 622 clk ispd_clk input wire n_276 output wire i_tx_phy_sd_nrzi_o 
+ms00f80 623 623 clk ispd_clk input wire n_411 output wire i_tx_phy_sd_raw_o 
+ms00f80 624 624 clk ispd_clk input wire i_tx_phy_sft_done output wire i_tx_phy_sft_done_r 
+ms00f80 625 625 clk ispd_clk input wire n_293 output wire i_tx_phy_sft_done 
+ms00f80 626 626 clk ispd_clk input wire n_459 output wire n_929 
+ms00f80 627 627 clk ispd_clk input wire n_420 output wire i_tx_phy_state_1_ 
+ms00f80 628 628 clk ispd_clk input wire n_432 output wire i_tx_phy_state_2_ 
+ms00f80 629 629 clk ispd_clk input wire n_976 output wire i_tx_phy_tx_ip 
+ms00f80 630 630 clk ispd_clk input wire n_319 output wire n_238 
+ms00f80 631 631 clk ispd_clk input wire n_364 primary output txdn 
+ms00f80 632 632 clk ispd_clk input wire n_366 primary output txdp 
+ms00f80 633 633 clk ispd_clk input wire n_320 output wire i_tx_phy_txoe_r1 
+ms00f80 634 634 clk ispd_clk input wire n_291 output wire i_tx_phy_txoe_r2 
+ms00f80 635 635 clk ispd_clk input wire n_333 primary output txoe 
+ms00f80 636 636 clk ispd_clk input wire n_362 output wire rst_cnt_0_ 
+ms00f80 637 637 clk ispd_clk input wire n_367 output wire rst_cnt_1_ 
+ms00f80 638 638 clk ispd_clk input wire n_428 output wire n_306 
+ms00f80 639 639 clk ispd_clk input wire n_417 output wire rst_cnt_3_ 
+ms00f80 640 640 clk ispd_clk input wire n_423 output wire rst_cnt_4_ 
+ms00f80 641 641 clk ispd_clk input wire n_275 primary output usb_rst 
+doing vector
+0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	21	22	23	24	25	26	27	28	29	30	31	32	33	34	35	36	37	38	39	40	41	42	43	44	45	46	47	48	49	50	51	52	53	54	55	56	57	58	59	60	61	62	63	64	65	66	67	68	69	70	71	72	73	74	75	76	77	78	79	80	81	82	83	84	85	86	87	88	89	90	91	92	93	94	95	96	97	98	99	100	101	102	103	104	105	106	107	108	109	110	111	112	113	114	115	116	117	118	119	120	121	122	123	124	125	126	127	128	129	130	131	132	133	134	135	136	137	138	139	140	141	142	143	144	145	146	147	148	149	150	151	152	153	154	155	156	157	158	159	160	161	162	163	164	165	166	167	168	169	170	171	172	173	174	175	176	177	178	179	180	181	182	183	184	185	186	187	188	189	190	191	192	193	194	195	196	197	198	199	200	201	202	203	204	205	206	207	208	209	210	211	212	213	214	215	216	217	218	219	220	221	222	223	224	225	226	227	228	229	230	231	232	233	234	235	236	237	238	239	240	241	242	243	244	245	246	247	248	249	250	251	252	253	254	255	256	257	258	259	260	261	262	263	264	265	266	267	268	269	270	271	272	273	274	275	276	277	278	279	280	281	282	283	284	285	286	287	288	289	290	291	292	293	294	295	296	297	298	299	300	301	302	303	304	305	306	307	308	309	310	311	312	313	314	315	316	317	318	319	320	321	322	323	324	325	326	327	328	329	330	331	332	333	334	335	336	337	338	339	340	341	342	343	344	345	346	347	348	349	350	351	352	353	354	355	356	357	358	359	360	361	362	363	364	365	366	367	368	369	370	371	372	373	374	375	376	377	378	379	380	381	382	383	384	385	386	387	388	389	390	391	392	393	394	395	396	397	398	399	400	401	402	403	404	405	406	407	408	409	410	411	412	413	414	415	416	417	418	419	420	421	422	423	424	425	426	427	428	429	430	431	432	433	434	435	436	437	438	439	440	441	442	443	444	445	446	447	448	449	450	451	452	453	454	455	456	457	458	459	460	461	462	463	464	465	466	467	468	469	470	471	472	473	474	475	476	477	478	479	480	481	482	483	484	485	486	487	488	489	490	491	492	493	494	495	496	497	498	499	500	501	502	503	504	505	506	507	508	509	510	511	512	513	514	515	516	517	518	519	520	521	522	523	524	525	526	527	528	529	530	531	532	533	534	535	536	537	538	539	540	541	542	543	544	545	546	547	548	549	550	551	552	553	554	555	556	557	558	559	560	561	562	563	564	565	566	567	568	569	570	571	572	573	574	575	576	577	578	579	580	581	582	583	584	585	586	587	588	589	590	591	592	593	594	595	596	597	598	599	600	601	602	603	604	605	606	607	608	writing to file
+key values
+the size is 642
+Cellcount:609
+Finished parsing verilog.
